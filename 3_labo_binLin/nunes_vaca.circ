@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project integrity="9acd6ce9095f952c097c399edcc82e3f61c3eddc" source="4.0.0.t" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.0.0.t(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="facing" val="east"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5">
+    <tool name="PortIO">
+      <a name="number" val="25"/>
+    </tool>
+  </lib>
+  <lib desc="#HDL-IP" name="6">
+    <tool name="VHDL Entity">
+      <a name="content">--------------------------------------------------------------------------------&#13;
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+library ieee;&#13;
+  use ieee.std_logic_1164.all;&#13;
+  --use ieee.numeric_std.all;&#13;
+&#13;
+entity VHDL_Component is&#13;
+  port(&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert input ports below&#13;
+    horloge_i  : in  std_logic;                    -- input bit example&#13;
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert output ports below&#13;
+    max_o      : out std_logic;                    -- output bit example&#13;
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
+    );&#13;
+end VHDL_Component;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+architecture type_architecture of VHDL_Component is&#13;
+&#13;
+&#13;
+begin&#13;
+&#13;
+&#13;
+end type_architecture;&#13;
+</a>
+    </tool>
+  </lib>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="bin_lin_3a8_top"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+    </tool>
+    <tool lib="1" name="NOT Gate">
+      <a name="date" val="2017-09-11T10:04:05+0200"/>
+      <a name="integrity" val="932f94c373a8498a3c1a47ff39e23a8cc2948620"/>
+      <a name="owner" val="autogen:mim"/>
+      <a name="uuid" val="e0b140f6-962b-4bad-ac00-747edb0cda53"/>
+      <a name="version" val="2.11.3"/>
+    </tool>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="bin_lin_3a8_top">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="bin_lin_3a8_top"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="downloadBoard" val="MAX_V_80P_25P"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <boardmap boardname="MAX_V_80P_25P">
+      <mc key="/comp_25p" map="673,132"/>
+      <mc key="/dipswitch_i" map="195,260"/>
+    </boardmap>
+    <comp lib="0" loc="(320,180)" name="Splitter">
+      <a name="date" val="2026-09-09T17:17:12+0200"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="integrity" val="981136c5397fd86f7871c2aa56264f4cc95d56be"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="155f1d5a-e50f-4006-8086-3a08c5fdbd47"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(590,160)" name="Ground">
+      <a name="date" val="2026-09-23T15:55:14+0200"/>
+      <a name="integrity" val="e6f0fb4e72bd64e6b36e9c45b0cd5e3749918458"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="67b4b7f6-7a14-4d10-ae0f-53f8f2e35d94"/>
+      <a name="version" val="4.0.0.t"/>
+      <a name="width" val="17"/>
+    </comp>
+    <comp lib="0" loc="(590,230)" name="Constant"/>
+    <comp lib="0" loc="(620,160)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit2" val="0"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="date" val="2026-09-23T15:54:39+0200"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="25"/>
+      <a name="integrity" val="0439e640ba74cb1c65394dab102a0ea543f7b8d1"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="1a5e4743-3d4a-4087-8f3b-d4ee0f16a05c"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(630,220)" name="NoConnect">
+      <a name="date" val="2026-09-23T15:54:08+0200"/>
+      <a name="integrity" val="b0e1bfad33f41a85be19609650d1c7f0bba8eca6"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="61754e26-9f61-42e4-942b-07094d0e4b49"/>
+      <a name="version" val="4.0.0.t"/>
+      <a name="width" val="25"/>
+    </comp>
+    <comp lib="5" loc="(200,220)" name="DipSwitch">
+      <a name="date" val="2026-09-09T17:16:55+0200"/>
+      <a name="integrity" val="8a47c53d3214ccc180f512401b4a343d2f155e95"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="f86e16c2-8894-4c22-9986-74c29c03eeef"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(610,220)" name="PortIO">
+      <a name="date" val="2026-09-23T15:53:22+0200"/>
+      <a name="integrity" val="7b1fbff6bebceb5be9df567fb62fc9294b5a8eec"/>
+      <a name="number" val="25"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4391db62-31b6-4bde-b790-d6ce44b87912"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp loc="(580,140)" name="bin_lin_3a8">
+      <a name="label" val="bin_lin_3a8_1"/>
+    </comp>
+    <wire from="(210,140)" to="(210,220)"/>
+    <wire from="(210,140)" to="(360,140)"/>
+    <wire from="(220,160)" to="(220,220)"/>
+    <wire from="(220,160)" to="(360,160)"/>
+    <wire from="(260,190)" to="(260,220)"/>
+    <wire from="(260,190)" to="(300,190)"/>
+    <wire from="(270,200)" to="(270,220)"/>
+    <wire from="(270,200)" to="(300,200)"/>
+    <wire from="(280,210)" to="(280,220)"/>
+    <wire from="(280,210)" to="(300,210)"/>
+    <wire from="(320,180)" to="(360,180)"/>
+    <wire from="(580,140)" to="(600,140)"/>
+    <wire from="(590,150)" to="(590,160)"/>
+    <wire from="(590,150)" to="(600,150)"/>
+    <wire from="(590,230)" to="(610,230)"/>
+    <wire from="(620,160)" to="(620,220)"/>
+  </circuit>
+  <circuit name="bin_lin_3a8_sim">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="bin_lin_3a8_sim"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T10:46:16+0200"/>
+      <a name="integrity" val="8af69b48c9474d9225d48c7a813ad8affa36dbd6"/>
+      <a name="label" val="En"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="c78d1174-7972-46bb-9f23-b236d01fb0af"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(180,190)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T10:46:16+0200"/>
+      <a name="integrity" val="8af69b48c9474d9225d48c7a813ad8affa36dbd6"/>
+      <a name="label" val="Sel"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="c78d1174-7972-46bb-9f23-b236d01fb0af"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(180,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T10:46:16+0200"/>
+      <a name="integrity" val="8af69b48c9474d9225d48c7a813ad8affa36dbd6"/>
+      <a name="label" val="Bin"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="c78d1174-7972-46bb-9f23-b236d01fb0af"/>
+      <a name="version" val="4.0.0.t"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(530,160)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="date" val="2026-09-08T10:47:16+0200"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="integrity" val="3a5a154d35f8499de7bfa507fddc2f8d9d93c32c"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="fa9312c2-4167-4227-b017-8744bf741798"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(400,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin7"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(450,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin6"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(500,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin5"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(550,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin4"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(600,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin3"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(650,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin2"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(700,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin1"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="5" loc="(750,90)" name="LED">
+      <a name="date" val="2026-09-09T17:32:58+0200"/>
+      <a name="facing" val="south"/>
+      <a name="integrity" val="83d52eef2f4f24bc780adff45ebce94f8f09ee58"/>
+      <a name="label" val="Lin0"/>
+      <a name="labelloc" val="north"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="4b4d2728-469f-48eb-8b4a-e5c9e790b64d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp loc="(530,160)" name="bin_lin_3a8"/>
+    <wire from="(180,150)" to="(270,150)"/>
+    <wire from="(180,190)" to="(280,190)"/>
+    <wire from="(180,230)" to="(290,230)"/>
+    <wire from="(270,150)" to="(270,160)"/>
+    <wire from="(270,160)" to="(310,160)"/>
+    <wire from="(280,180)" to="(280,190)"/>
+    <wire from="(280,180)" to="(310,180)"/>
+    <wire from="(290,200)" to="(290,230)"/>
+    <wire from="(290,200)" to="(310,200)"/>
+    <wire from="(400,130)" to="(540,130)"/>
+    <wire from="(400,90)" to="(400,130)"/>
+    <wire from="(450,120)" to="(550,120)"/>
+    <wire from="(450,90)" to="(450,120)"/>
+    <wire from="(500,110)" to="(560,110)"/>
+    <wire from="(500,90)" to="(500,110)"/>
+    <wire from="(540,130)" to="(540,140)"/>
+    <wire from="(550,100)" to="(570,100)"/>
+    <wire from="(550,120)" to="(550,140)"/>
+    <wire from="(550,90)" to="(550,100)"/>
+    <wire from="(560,110)" to="(560,140)"/>
+    <wire from="(570,100)" to="(570,140)"/>
+    <wire from="(580,100)" to="(580,140)"/>
+    <wire from="(580,100)" to="(600,100)"/>
+    <wire from="(590,110)" to="(590,140)"/>
+    <wire from="(590,110)" to="(650,110)"/>
+    <wire from="(600,120)" to="(600,140)"/>
+    <wire from="(600,120)" to="(700,120)"/>
+    <wire from="(600,90)" to="(600,100)"/>
+    <wire from="(610,130)" to="(610,140)"/>
+    <wire from="(610,130)" to="(750,130)"/>
+    <wire from="(650,90)" to="(650,110)"/>
+    <wire from="(700,90)" to="(700,120)"/>
+    <wire from="(750,90)" to="(750,130)"/>
+  </circuit>
+  <circuit name="bin_lin_3a8">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="bin_lin_3a8"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(230,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T07:23:44+0200"/>
+      <a name="integrity" val="27fb32063c74aa65e0f4628f2fd9c5d8929f4bd6"/>
+      <a name="label" val="en_i"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="bfdcf332-bc9d-4f59-ada6-45011cb85472"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(230,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T07:23:45+0200"/>
+      <a name="integrity" val="7c60e84bbf2a643566bfcc92b9b3727e88fec627"/>
+      <a name="label" val="sel_i"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="7721435d-ef5e-46cc-9153-07e36f88f053"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="0" loc="(230,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T07:23:47+0200"/>
+      <a name="integrity" val="cf51f863e13bdaa43020d88f2d5403fc17144851"/>
+      <a name="label" val="bin_i"/>
+      <a name="owner" val="best_test"/>
+      <a name="uuid" val="7e341c54-d2a6-4b33-aad8-e5369ac5dd8e"/>
+      <a name="version" val="4.0.0.t"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(930,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2026-09-08T07:23:47+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="cf51f863e13bdaa43020d88f2d5403fc17144851"/>
+      <a name="label" val="lin_o"/>
+      <a name="owner" val="best_test"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="7e341c54-d2a6-4b33-aad8-e5369ac5dd8e"/>
+      <a name="version" val="4.0.0.t"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(380,180)" name="OR Gate">
+      <a name="date" val="2026-10-07T14:29:25+0200"/>
+      <a name="integrity" val="3360a1b6f062b0edf6b6cb37d5c05afdb9b165bf"/>
+      <a name="owner" val="nunes_vaca"/>
+      <a name="uuid" val="a4d54adc-1bd5-44c9-a471-92faf1f25d37"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(570,200)" name="AND Gate">
+      <a name="date" val="2026-10-07T14:30:19+0200"/>
+      <a name="integrity" val="728c37146d4513f40e432df6801e12dc4ec2cc81"/>
+      <a name="owner" val="nunes_vaca"/>
+      <a name="uuid" val="4adff5aa-0b31-4535-996e-c6bc4ed4335f"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="8" loc="(625,45)" name="Text">
+      <a name="font" val="SansSerif plain 30"/>
+      <a name="text" val="Ne pas modifier les entrées sorties !"/>
+    </comp>
+    <wire from="(230,140)" to="(250,140)"/>
+    <wire from="(230,210)" to="(250,210)"/>
+    <wire from="(250,140)" to="(250,160)"/>
+    <wire from="(250,160)" to="(330,160)"/>
+    <wire from="(250,200)" to="(250,210)"/>
+    <wire from="(250,200)" to="(300,200)"/>
+    <wire from="(300,200)" to="(300,220)"/>
+    <wire from="(300,200)" to="(330,200)"/>
+    <wire from="(300,220)" to="(520,220)"/>
+    <wire from="(380,180)" to="(520,180)"/>
+  </circuit>
+</project>
