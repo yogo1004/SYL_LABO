@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project integrity="1f8be7a887e457e00f17a99a3479e844dff43803" source="4.0.0.t" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.0.0.t(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#HDL-IP" name="6">
+    <tool name="VHDL Entity">
+      <a name="content">--------------------------------------------------------------------------------
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+library ieee;
+  use ieee.std_logic_1164.all;
+  --use ieee.numeric_std.all;
+
+entity VHDL_Component is
+  port(
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+  ------------------------------------------------------------------------------
+  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+    );
+end VHDL_Component;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+architecture type_architecture of VHDL_Component is
+
+
+begin
+
+
+end type_architecture;
+</a>
+    </tool>
+  </lib>
+  <lib desc="#TCL" name="7">
+    <tool name="TclGeneric">
+      <a name="content">library ieee;
+use ieee.std_logic_1164.all;
+
+entity TCL_Generic is
+  port(
+    --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+
+	  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+  );
+end TCL_Generic;
+</a>
+    </tool>
+  </lib>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <main name="animaux_top"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+    </tool>
+    <tool lib="1" name="NOT Gate">
+      <a name="date" val="2024-09-25T15:45:11+0200"/>
+      <a name="integrity" val="4194a451c7abca7e1b1ce3da299e3838b13c4436"/>
+      <a name="owner" val="autogen:bet"/>
+      <a name="uuid" val="437c4b53-f457-4c89-8426-901c61d2636a"/>
+      <a name="version" val="2.11.3"/>
+    </tool>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="animaux_top">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="animaux_top"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(150,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="b4ed646e181f2034597994cdc032f1921b6adb46"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="22326c72-eac2-4a8b-9ab5-dd9f941ff044"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(150,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="8922e8fa85a821396b8bf93cd6abdd078676cdc8"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="2938fdc9-f44a-4bf1-b204-3b96461919aa"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(150,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="4f7b461337713fe9531b47aea8ce71d0273f1e7e"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d4c225a5-834b-4f9d-8398-2845e40e33a4"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(150,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="dee90bee4adff323836b9e990f690003968ca6b9"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="44c0953a-2300-4f03-ac63-5c1f811c1b10"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,190)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="ours"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="oiseau"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="ornithorynque"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,590)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="lezard"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,720)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="serpent"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(850,840)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="animal_indetermine"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(850,840)" name="NOR Gate">
+      <a name="date" val="2026-09-30T13:55:11+0200"/>
+      <a name="inputs" val="5"/>
+      <a name="integrity" val="2d5755d52ea140c8df9a151572dbce2960d94af5"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="6a22a83a-ba63-4dbe-b8ef-28d67d604771"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp loc="(640,190)" name="ours_man"/>
+    <comp loc="(650,320)" name="oiseau_man"/>
+    <comp loc="(650,590)" name="lezard_man"/>
+    <comp loc="(660,720)" name="serpent_auto"/>
+    <comp loc="(710,450)" name="ornithorynque_auto"/>
+    <wire from="(150,100)" to="(220,100)"/>
+    <wire from="(150,130)" to="(240,130)"/>
+    <wire from="(150,160)" to="(260,160)"/>
+    <wire from="(150,70)" to="(200,70)"/>
+    <wire from="(200,190)" to="(200,320)"/>
+    <wire from="(200,190)" to="(450,190)"/>
+    <wire from="(200,320)" to="(200,450)"/>
+    <wire from="(200,320)" to="(450,320)"/>
+    <wire from="(200,450)" to="(200,590)"/>
+    <wire from="(200,450)" to="(450,450)"/>
+    <wire from="(200,590)" to="(200,720)"/>
+    <wire from="(200,590)" to="(450,590)"/>
+    <wire from="(200,70)" to="(200,190)"/>
+    <wire from="(200,720)" to="(450,720)"/>
+    <wire from="(220,100)" to="(220,210)"/>
+    <wire from="(220,210)" to="(220,340)"/>
+    <wire from="(220,210)" to="(450,210)"/>
+    <wire from="(220,340)" to="(220,470)"/>
+    <wire from="(220,340)" to="(450,340)"/>
+    <wire from="(220,470)" to="(220,610)"/>
+    <wire from="(220,470)" to="(450,470)"/>
+    <wire from="(220,610)" to="(220,740)"/>
+    <wire from="(220,610)" to="(450,610)"/>
+    <wire from="(220,740)" to="(450,740)"/>
+    <wire from="(240,130)" to="(240,230)"/>
+    <wire from="(240,230)" to="(240,360)"/>
+    <wire from="(240,230)" to="(450,230)"/>
+    <wire from="(240,360)" to="(240,490)"/>
+    <wire from="(240,360)" to="(450,360)"/>
+    <wire from="(240,490)" to="(240,630)"/>
+    <wire from="(240,490)" to="(450,490)"/>
+    <wire from="(240,630)" to="(240,760)"/>
+    <wire from="(240,630)" to="(450,630)"/>
+    <wire from="(240,760)" to="(450,760)"/>
+    <wire from="(260,160)" to="(260,250)"/>
+    <wire from="(260,250)" to="(260,380)"/>
+    <wire from="(260,250)" to="(450,250)"/>
+    <wire from="(260,380)" to="(260,510)"/>
+    <wire from="(260,380)" to="(450,380)"/>
+    <wire from="(260,510)" to="(260,650)"/>
+    <wire from="(260,510)" to="(450,510)"/>
+    <wire from="(260,650)" to="(260,780)"/>
+    <wire from="(260,650)" to="(450,650)"/>
+    <wire from="(260,780)" to="(450,780)"/>
+    <wire from="(640,190)" to="(790,190)"/>
+    <wire from="(650,320)" to="(780,320)"/>
+    <wire from="(650,590)" to="(760,590)"/>
+    <wire from="(660,720)" to="(750,720)"/>
+    <wire from="(710,450)" to="(770,450)"/>
+    <wire from="(750,720)" to="(750,860)"/>
+    <wire from="(750,720)" to="(850,720)"/>
+    <wire from="(750,860)" to="(790,860)"/>
+    <wire from="(760,590)" to="(760,850)"/>
+    <wire from="(760,590)" to="(850,590)"/>
+    <wire from="(760,850)" to="(790,850)"/>
+    <wire from="(770,450)" to="(770,840)"/>
+    <wire from="(770,450)" to="(850,450)"/>
+    <wire from="(770,840)" to="(790,840)"/>
+    <wire from="(780,320)" to="(780,830)"/>
+    <wire from="(780,320)" to="(850,320)"/>
+    <wire from="(780,830)" to="(790,830)"/>
+    <wire from="(790,190)" to="(790,820)"/>
+    <wire from="(790,190)" to="(850,190)"/>
+  </circuit>
+  <circuit name="ours_man">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ours_man"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="dee90bee4adff323836b9e990f690003968ca6b9"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="44c0953a-2300-4f03-ac63-5c1f811c1b10"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="8922e8fa85a821396b8bf93cd6abdd078676cdc8"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="2938fdc9-f44a-4bf1-b204-3b96461919aa"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="b4ed646e181f2034597994cdc032f1921b6adb46"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="22326c72-eac2-4a8b-9ab5-dd9f941ff044"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="4f7b461337713fe9531b47aea8ce71d0273f1e7e"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d4c225a5-834b-4f9d-8398-2845e40e33a4"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(810,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="ours"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(320,280)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:37:50+0200"/>
+      <a name="integrity" val="5309d1753fbd1dbc66c476aa8e4821c48f504555"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="dc4b12c8-49dc-4f89-bd97-2888cc8efb9d"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(320,400)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:41:30+0200"/>
+      <a name="integrity" val="acf04102bd8fca64a3944e3140ba3210d87c4fc2"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="d4555ef7-7978-461c-ba04-19333dca5364"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(320,530)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:40:54+0200"/>
+      <a name="integrity" val="04b12b1ea5076d631ba24b9b2026f90546ad264b"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="cfa65e55-8229-4353-960b-288de09714cb"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(580,310)" name="AND Gate">
+      <a name="date" val="2026-09-30T13:37:39+0200"/>
+      <a name="inputs" val="4"/>
+      <a name="integrity" val="db3b6626273f721145a450985b8f0be36bc72bfa"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="1b834ad0-79a3-4582-9f9e-04fccf422cf5"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <wire from="(260,160)" to="(370,160)"/>
+    <wire from="(260,280)" to="(290,280)"/>
+    <wire from="(260,400)" to="(290,400)"/>
+    <wire from="(260,530)" to="(290,530)"/>
+    <wire from="(320,280)" to="(350,280)"/>
+    <wire from="(320,400)" to="(350,400)"/>
+    <wire from="(320,530)" to="(370,530)"/>
+    <wire from="(350,280)" to="(350,300)"/>
+    <wire from="(350,300)" to="(530,300)"/>
+    <wire from="(350,320)" to="(350,400)"/>
+    <wire from="(350,320)" to="(530,320)"/>
+    <wire from="(370,160)" to="(370,290)"/>
+    <wire from="(370,290)" to="(530,290)"/>
+    <wire from="(370,330)" to="(370,530)"/>
+    <wire from="(370,330)" to="(530,330)"/>
+    <wire from="(580,310)" to="(810,310)"/>
+  </circuit>
+  <circuit name="oiseau_man">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="oiseau_man"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="dee90bee4adff323836b9e990f690003968ca6b9"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="44c0953a-2300-4f03-ac63-5c1f811c1b10"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="b4ed646e181f2034597994cdc032f1921b6adb46"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="22326c72-eac2-4a8b-9ab5-dd9f941ff044"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="8922e8fa85a821396b8bf93cd6abdd078676cdc8"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="2938fdc9-f44a-4bf1-b204-3b96461919aa"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="4f7b461337713fe9531b47aea8ce71d0273f1e7e"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d4c225a5-834b-4f9d-8398-2845e40e33a4"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(810,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="oiseau"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(320,160)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:42:28+0200"/>
+      <a name="integrity" val="820e843932ec8d96ada0d961a3c9c270a874834c"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="5db2cd03-4cb9-4166-b8c9-1bc50e992abd"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(320,270)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:42:37+0200"/>
+      <a name="integrity" val="74d5dbf5f9fd98621a4b945f82a4c9eb59613a9d"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="bdeb5b0c-89fa-49da-b1ad-c3ea4018b73f"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(320,530)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:42:56+0200"/>
+      <a name="integrity" val="30a12b0abda335d612c1da4a7c8887b258c96e77"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="44d1cf97-a9e3-4dc4-8686-404e1617cccf"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(670,310)" name="AND Gate">
+      <a name="date" val="2026-09-30T13:42:16+0200"/>
+      <a name="inputs" val="4"/>
+      <a name="integrity" val="cd891daa32c717e33e11f5a46a5cadea46230859"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="ae74e13d-9f32-41c7-9a2f-ba729d6f9509"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <wire from="(260,160)" to="(290,160)"/>
+    <wire from="(260,270)" to="(290,270)"/>
+    <wire from="(260,400)" to="(320,400)"/>
+    <wire from="(260,530)" to="(290,530)"/>
+    <wire from="(320,160)" to="(330,160)"/>
+    <wire from="(320,270)" to="(320,300)"/>
+    <wire from="(320,300)" to="(620,300)"/>
+    <wire from="(320,320)" to="(320,400)"/>
+    <wire from="(320,320)" to="(620,320)"/>
+    <wire from="(320,530)" to="(330,530)"/>
+    <wire from="(330,160)" to="(330,290)"/>
+    <wire from="(330,290)" to="(620,290)"/>
+    <wire from="(330,330)" to="(330,530)"/>
+    <wire from="(330,330)" to="(620,330)"/>
+    <wire from="(670,310)" to="(810,310)"/>
+  </circuit>
+  <circuit name="lezard_man">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="lezard_man"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="dee90bee4adff323836b9e990f690003968ca6b9"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="44c0953a-2300-4f03-ac63-5c1f811c1b10"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="b4ed646e181f2034597994cdc032f1921b6adb46"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="22326c72-eac2-4a8b-9ab5-dd9f941ff044"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="8922e8fa85a821396b8bf93cd6abdd078676cdc8"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="2938fdc9-f44a-4bf1-b204-3b96461919aa"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="4f7b461337713fe9531b47aea8ce71d0273f1e7e"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d4c225a5-834b-4f9d-8398-2845e40e33a4"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(810,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="lezard"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(470,460)" name="OR Gate">
+      <a name="date" val="2026-09-30T13:45:20+0200"/>
+      <a name="integrity" val="6e6a5bb5b41da552497730ebe49ac96d6fed6199"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="a11971bc-8712-4901-9919-5eb6f1593f9b"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(740,310)" name="AND Gate">
+      <a name="date" val="2026-09-30T13:46:06+0200"/>
+      <a name="inputs" val="3"/>
+      <a name="integrity" val="a3e6aa5ef78533b396b43a8e6cba34f979d2f3e9"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="d044aaee-4443-40cc-94ee-f6d042c691bd"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <wire from="(260,160)" to="(280,160)"/>
+    <wire from="(260,270)" to="(270,270)"/>
+    <wire from="(260,400)" to="(270,400)"/>
+    <wire from="(260,530)" to="(280,530)"/>
+    <wire from="(270,270)" to="(270,310)"/>
+    <wire from="(270,310)" to="(690,310)"/>
+    <wire from="(270,400)" to="(270,440)"/>
+    <wire from="(270,440)" to="(420,440)"/>
+    <wire from="(280,160)" to="(280,290)"/>
+    <wire from="(280,290)" to="(690,290)"/>
+    <wire from="(280,480)" to="(280,530)"/>
+    <wire from="(280,480)" to="(420,480)"/>
+    <wire from="(470,460)" to="(690,460)"/>
+    <wire from="(690,330)" to="(690,460)"/>
+    <wire from="(740,310)" to="(810,310)"/>
+  </circuit>
+  <circuit name="ornithorynque_auto">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="ornithorynque_auto"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="dee90bee4adff323836b9e990f690003968ca6b9"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="44c0953a-2300-4f03-ac63-5c1f811c1b10"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="b4ed646e181f2034597994cdc032f1921b6adb46"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="22326c72-eac2-4a8b-9ab5-dd9f941ff044"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="8922e8fa85a821396b8bf93cd6abdd078676cdc8"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="2938fdc9-f44a-4bf1-b204-3b96461919aa"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="4f7b461337713fe9531b47aea8ce71d0273f1e7e"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d4c225a5-834b-4f9d-8398-2845e40e33a4"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(810,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="7258f33546bc9d2c5b10ebcc963f7b6bc426f641"/>
+      <a name="label" val="ornithorynque"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="6276980c-8e70-4bf1-aae2-841a083a0cf8"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(310,270)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:48:30+0200"/>
+      <a name="integrity" val="d17b816aabf4a5124a6c1344ba17747433b4214a"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="fd1b911a-5c3d-4935-916e-0db966d5998a"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(310,400)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:48:40+0200"/>
+      <a name="integrity" val="d3b685224a91fb2830928678f0d46dd578486d93"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="6c5717eb-ca30-40fe-885f-8644bce7e718"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(730,310)" name="AND Gate">
+      <a name="date" val="2026-09-30T13:48:03+0200"/>
+      <a name="inputs" val="4"/>
+      <a name="integrity" val="6e26962943f741ea69073ba8fe59e265eed305b3"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="a36d6a32-3011-4099-92c6-efad826bf6d1"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <wire from="(260,160)" to="(320,160)"/>
+    <wire from="(260,270)" to="(280,270)"/>
+    <wire from="(260,400)" to="(280,400)"/>
+    <wire from="(260,530)" to="(320,530)"/>
+    <wire from="(310,270)" to="(310,300)"/>
+    <wire from="(310,300)" to="(680,300)"/>
+    <wire from="(310,320)" to="(310,400)"/>
+    <wire from="(310,320)" to="(680,320)"/>
+    <wire from="(320,160)" to="(320,290)"/>
+    <wire from="(320,290)" to="(680,290)"/>
+    <wire from="(320,330)" to="(320,530)"/>
+    <wire from="(320,330)" to="(680,330)"/>
+    <wire from="(730,310)" to="(810,310)"/>
+  </circuit>
+  <circuit name="serpent_auto">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="serpent_auto"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(260,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:18+0200"/>
+      <a name="integrity" val="0d65aef051874680c5b0409e8d6c4b333f2df333"/>
+      <a name="label" val="quatre_pattes"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="d14efa6f-6c7e-42a0-98b0-cc146889c6c3"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:22+0200"/>
+      <a name="integrity" val="bcdcb5513245d6d7406251ea48faf0c1dc1f22b8"/>
+      <a name="label" val="ecailles"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="8f74e813-65bd-4112-8ba4-c0a651e1f5be"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:25+0200"/>
+      <a name="integrity" val="6aeb027738c360fbe042c5678ffa14eb29c96578"/>
+      <a name="label" val="ovipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="7a2d3d2b-bc6c-4362-bfb2-fea4b0cac44a"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(260,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:28+0200"/>
+      <a name="integrity" val="92e51946d2f9c53364fcd9c42d6fb3abef748ea1"/>
+      <a name="label" val="ovovivipare"/>
+      <a name="owner" val="bet"/>
+      <a name="uuid" val="48b7b47e-a125-41d4-8763-f28a809c1160"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="0" loc="(810,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="date" val="2024-09-25T15:47:50+0200"/>
+      <a name="facing" val="west"/>
+      <a name="integrity" val="8e1ca03205c6f2a723ecc59437aa385234f058a9"/>
+      <a name="label" val="serpent"/>
+      <a name="labelloc" val="east"/>
+      <a name="owner" val="bet"/>
+      <a name="type" val="output"/>
+      <a name="uuid" val="ed634f50-1d1a-4813-b79f-184de281b36e"/>
+      <a name="version" val="2.16.8.t"/>
+    </comp>
+    <comp lib="1" loc="(320,160)" name="NOT Gate">
+      <a name="date" val="2026-09-30T13:50:12+0200"/>
+      <a name="integrity" val="1b030912e09b2f2d5353dc0eae505023c4dc64c5"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="aa99760d-c820-46ad-9494-3a0ade1d71ea"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(450,460)" name="OR Gate">
+      <a name="date" val="2026-09-30T13:50:33+0200"/>
+      <a name="integrity" val="c813852f863c6cd144b6240ee2c21dd855d5f5ef"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="a6a32941-5be0-4df8-bf3f-1e471c75b01b"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <comp lib="1" loc="(750,310)" name="AND Gate">
+      <a name="date" val="2026-09-30T13:50:19+0200"/>
+      <a name="inputs" val="3"/>
+      <a name="integrity" val="6c75377cdfbdf2984ef351b950f606d72873352a"/>
+      <a name="owner" val="maxence_nunes"/>
+      <a name="uuid" val="09ebcd5d-2867-4528-8665-2870dda9d19b"/>
+      <a name="version" val="4.0.0.t"/>
+    </comp>
+    <wire from="(260,160)" to="(290,160)"/>
+    <wire from="(260,270)" to="(260,310)"/>
+    <wire from="(260,310)" to="(700,310)"/>
+    <wire from="(260,400)" to="(260,440)"/>
+    <wire from="(260,440)" to="(400,440)"/>
+    <wire from="(260,480)" to="(260,530)"/>
+    <wire from="(260,480)" to="(400,480)"/>
+    <wire from="(320,160)" to="(320,290)"/>
+    <wire from="(320,290)" to="(700,290)"/>
+    <wire from="(450,330)" to="(450,460)"/>
+    <wire from="(450,330)" to="(700,330)"/>
+    <wire from="(750,310)" to="(810,310)"/>
+  </circuit>
+</project>
